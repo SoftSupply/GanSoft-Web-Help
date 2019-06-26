@@ -1,0 +1,55 @@
+﻿{
+  "Name": "Reseller",
+  "Title": "Distribuidores TDPro",
+  "Description": "Manual para distribuidores de los productos de TDPro C.A. en el manejo del portal",
+  "Index": [
+    {
+      "Title": "<b>Afiliación</b>",
+      "Items": [
+        {
+          "Title": "Creación de cuenta",
+          "Link": "Reseller?id=Afiliacion&key=Cuenta"
+        },
+        {
+          "Title": "Afiliación",
+          "Link": "Reseller?id=Afiliacion&key=Afiliacion"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Distribución</b>",
+      "Items": [
+        {
+          "Title": "Distribución",
+          "Link": "Reseller?id=Distribucion&key=Distribucion"
+        },
+        {
+          "Title": "Movimientos",
+          "Link": "Reseller?id=Distribucion&key=Movimientos"
+        },
+        {
+          "Title": "Distribuidores",
+          "Link": "Reseller?id=Distribucion&key=Distribuidores"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Operaciones</b>",
+      "Items": [
+        {
+          "Title": "Operaciones",
+          "Link": "Reseller?id=Operaciones&key=Operaciones"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Pendientes</b>",
+      "Items": [
+        {
+          "Title": "Pendientes",
+          "Link": "Reseller?id=Pendientes&key=Pendientes"
+        }
+      ]
+    }
+  ]
+}
