@@ -1,53 +1,50 @@
 ﻿{
   "Name": "GanSoftWeb",
-  "Title": "Distribuidores TDPro",
-  "Description": "Manual para distribuidores de los productos de TDPro C.A. en el manejo del portal",
+  "Title": "GanSoft Web",
+  "Description": "Manual para manejo de la Plataforma en línea GanSoft Web",
   "Index": [
     {
-      "Title": "<b>Afiliación</b>",
+      "Title": "<b>General</b>",
       "Items": [
         {
-          "Title": "Creación de cuenta",
+          "Title": "General",
           "Link": "Reseller?id=Afiliacion&key=Cuenta"
-        },
-        {
-          "Title": "Afiliación",
-          "Link": "Reseller?id=Afiliacion&key=Afiliacion"
         }
       ]
     },
     {
-      "Title": "<b>Distribución</b>",
+      "Title": "<b>General</b>",
       "Items": [
         {
-          "Title": "Distribución",
+          "Title": "General",
+          "Link": "Reseller?id=Afiliacion&key=Cuenta"
+        }
+      ]
+    },
+    {
+      "Title": "<b>Estadísticas</b>",
+      "Items": [
+        {
+          "Title": "Estadísticas",
           "Link": "Reseller?id=Distribucion&key=Distribucion"
-        },
-        {
-          "Title": "Movimientos",
-          "Link": "Reseller?id=Distribucion&key=Movimientos"
-        },
-        {
-          "Title": "Distribuidores",
-          "Link": "Reseller?id=Distribucion&key=Distribuidores"
         }
       ]
     },
     {
-      "Title": "<b>Operaciones</b>",
+      "Title": "<b>Históricos</b>",
       "Items": [
         {
-          "Title": "Operaciones",
-          "Link": "Reseller?id=Operaciones&key=Operaciones"
+          "Title": "Históricos",
+          "Link": "Reseller?id=Distribucion&key=Distribucion"
         }
       ]
     },
     {
-      "Title": "<b>Pendientes</b>",
+      "Title": "<b>Administrar</b>",
       "Items": [
         {
-          "Title": "Pendientes",
-          "Link": "Reseller?id=Pendientes&key=Pendientes"
+          "Title": "Grupos",
+          "Link": "Reseller?id=Distribucion&key=Distribucion"
         }
       ]
     }
