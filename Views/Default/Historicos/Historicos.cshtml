@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Históricos";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de GanSoft Web {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Sistema que evalúa también el comportamiento estadístico de las variables descritas con anterioridad, pero mostradas y evaluadas
+            cronológicamente en los últimos 11 años.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Gráficas">Gráficas</a>
+            </li>
+            <li>
+                <a href="#Observaciones">Observaciones finales</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Filtrar">Filtrar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Ofrece la misma posibilidad de “Filtrar” la información, escoger el grupo, escoger la variable y también establecer límites mínimos y máximos
+                    para la variable evaluada.
+                </p>
+                <p>
+                    Al oprimir “Calcular”, se muestra la siguiente gráfica con la evaluación cronológica de la variable seleccionada en los últimos 11 años. También
+                    se muestra con una línea roja la curva de la tendencia y si hace “Clic” sobre la curva, muestra la ecuación de la tendencia de grado 6:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen1.jpg" class="thumbnail" data-lightbox="Filtros" data-title="Filtros">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen1.jpg" alt="Filtros" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Debajo de la gráfica se muestra la tabla con los valores calculados de la
+                    variable seleccionada de los últimos 11 años.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen1.jpg" class="thumbnail" data-lightbox="Filtros" data-title="Filtros">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen1.jpg" alt="Filtros" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Observaciones">Observaciones finales</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Las variables evaluadas a partir de estos datos son bastante confiables ya que ofrecen información veraz y exacta en
+                    más de un 80% obtenida directamente de los diferentes usuarios a nivel mundial, sin embargo, queremos que ese 20 % restante sea también
+                    información confiable y veraz por lo que en un futuro cercano enviaremos de manera automática y dinámica a cada uno de los
+                    usuarios la observación exacta de cada “supuesto ERROR” para que sea corregida la información en cada base de datos del usuario y posterior
+                    actualización de nuestro sistema por sincronización automática. Esto hará que el sistema se vaya depurando automáticamente, por supuesto,
+                    en la medida de que cada usuario individualmente haga las correcciones pertinentes en su base de datos.
+                </p>
+                <p>
+                    Al mismo tiempo, los datos de los usuarios se irán reparando automáticamente en la medida que vayan corrigiendo según las
+                    observaciones obtenidas de GanSoft Web.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    GanSoft Pro ofrece también las mismas herramientas de detección de estos errores en la opción Estadísticas (Crecimiento, Producción,
+                    Reproducción) y el usuario puede localizar los elementos fuera de los valores estándares y corregirlos. Esto dará mayor confiabilidad y por
+                    ende mayor valor agregado a su base de datos y podrá confiar 100% en ellos para la toma de decisiones.
+                </p>
+            </div>
+        </div>
+        </div>
+</article>
