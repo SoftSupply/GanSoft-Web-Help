@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Afiliación";
+    ViewBag.Title = "General";
     ViewBag.SubTitle = "";
     ViewBag.MainTitle = $"Manual de GanSoft Web {ViewBag.Manifest.Title}";
 }
@@ -37,8 +37,7 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Cuando accede al menú "General" se muestra, a mano derecha, una opción
-                    para "Filtrar" mostrándose a continuación:
+                    Cuando accede al menú "General" se muestra, a mano derecha, una opción para "Filtrar" mostrándose a continuación:
                 </p>
             </div>
             <div class="col-md-4">
@@ -63,24 +62,25 @@
                     </ul>
                 </p>
                 <p>
-                    Para poder “Filtrar” por Grupo, el usuario debe estar autorizado para
-                    ver los datos del grupo seleccionado. El usuario puede tener
-                    autorización para ver varios Grupos y aparecerán en su lista de Grupos
-                    una vez haya iniciado sesión con su usuario y contraseña.
-                </p>
-                <p>
-                    El usuario puede filtrar por cualquiera de estas opciones y al presionar
-                    “Aplicar” se actualiza el formulario mostrando en primer plano, un mapa
-                    con la información geográfica solicitada. El mapa se ajusta
-                    automáticamente según el “Filtro” seleccionado y muestra la
+                    El usuario puede filtrar por cualquiera de estas opciones y al presionar “Aplicar” se actualiza el formulario mostrando en primer plano, un mapa
+                    con la información geográfica solicitada. El mapa se ajusta automáticamente según el “Filtro” seleccionado y muestra la
                     distribución geográfica de animales y rebaños.
-
                 </p>
             </div>
             <div class="col-md-4">
                 <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen2.jpg" class="thumbnail" data-lightbox="Variables para filtrar" data-title="Variables para filtrar">
                     <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen2.png" alt="Variables para filtrar" />
                 </a>
+            </div>
+            <div class="alert alert-info row" role="alert">
+                <div class="col-md-1">
+                    <i class="fa fa-5x fa-info"></i>
+                </div>
+                <div class="col-md-10">
+                    <strong>Importante!</strong><br />
+                    Para poder “Filtrar” por Grupo, el usuario debe estar autorizado para ver los datos del grupo seleccionado. El usuario puede tener
+                    autorización para ver varios Grupos y aparecerán en su lista de Grupos una vez haya iniciado sesión con su usuario y contraseña.
+                </div>
             </div>
         </div>
     </div>
@@ -89,8 +89,7 @@
         <div class="row">
             <div class="col-md-8">
                 <p>
-                    Debajo del mapa, se muestran 2 gráficas tipo “Torta”, la primera
-                    conteniendo la información de los animales según el “Filtro” aplicado y
+                    Debajo del mapa, se muestran 2 gráficas tipo “Torta”, la primera conteniendo la información de los animales según el “Filtro” aplicado y
                     agrupados según la opción de agrupamiento seleccionada.
                 </p>
             </div>
@@ -122,8 +121,7 @@
             </div>
             <div class="col-md-8">
                 <p>
-                    La segunda, contiene información de los rebaños según el filtro aplicado
-                    y mostrándose agrupados por:
+                    La segunda, contiene información de los rebaños según el filtro aplicado y mostrándose agrupados por:
                     <ul>
                         <li>Por Especie.</li>
                         <li>Por Ubicación.</li>
