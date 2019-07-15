@@ -8,16 +8,7 @@
       "Items": [
         {
           "Title": "General",
-          "Link": "Reseller?id=Afiliacion&key=Cuenta"
-        }
-      ]
-    },
-    {
-      "Title": "<b>General</b>",
-      "Items": [
-        {
-          "Title": "General",
-          "Link": "Reseller?id=Afiliacion&key=Cuenta"
+          "Link": "GanSoftWeb?id=General&key=General"
         }
       ]
     },
@@ -26,7 +17,7 @@
       "Items": [
         {
           "Title": "Estadísticas",
-          "Link": "Reseller?id=Distribucion&key=Distribucion"
+          "Link": "GanSoftWeb?id=Estadisticas&key=Estadisticas"
         }
       ]
     },
@@ -35,7 +26,7 @@
       "Items": [
         {
           "Title": "Históricos",
-          "Link": "Reseller?id=Distribucion&key=Distribucion"
+          "Link": "GanSoftWeb?id=Historicos&key=Historicos"
         }
       ]
     },
@@ -44,7 +35,7 @@
       "Items": [
         {
           "Title": "Grupos",
-          "Link": "Reseller?id=Distribucion&key=Distribucion"
+          "Link": "GanSoftWeb?id=Administrar&key=Grupos"
         }
       ]
     }
