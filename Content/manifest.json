@@ -29,15 +29,6 @@
           "Link": "GanSoftWeb?id=Historicos&key=Historicos"
         }
       ]
-    },
-    {
-      "Title": "<b>Administrar</b>",
-      "Items": [
-        {
-          "Title": "Grupos",
-          "Link": "GanSoftWeb?id=Administrar&key=Grupos"
-        }
-      ]
     }
   ]
 }
