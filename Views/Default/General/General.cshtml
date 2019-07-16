@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "General";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de GanSoft Web {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+          Aquí inicia tu recorrido por la plataforma GanSoft Web  
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Filtrar">Filtrar</a>
+            </li>
+            <li>
+                <a href="#Gráficas">Gráficas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Filtrar">Filtrar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Cuando accede al menú "General" se muestra, a mano derecha, una opción para "Filtrar" mostrándose a continuación:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen01.jpg" class="thumbnail" data-lightbox="Filtros" data-title="Filtros">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen01.jpg" alt="Filtros" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Las variables de los filtros a los que puedes acceder son:
+                    <ul>
+                        <li>Especie.</li>
+                        <li> Estado o categoría del animal (Grupo etario).</li>
+                        <li> Estatus del animal (Activo, Inactivo….).</li>
+                        <li> País.</li>
+                        <li> Región.</li>
+                        <li> Subregión.</li>
+                        <li> Tipo de explotación.</li>
+                        <li> Tipo de manejo.</li>
+                        <li> Zona Agroecológica.</li>
+                        <li> Grupo de rebaños que puede ver y filtrar el usuario.</li>
+                    </ul>
+                </p>
+                <p>
+                    El usuario puede filtrar por cualquiera de estas opciones y al presionar “Aplicar” se actualiza el formulario mostrando en primer plano, un mapa
+                    con la información geográfica solicitada. El mapa se ajusta automáticamente según el “Filtro” seleccionado y muestra la
+                    distribución geográfica de animales y rebaños.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen02.jpg" class="thumbnail" data-lightbox="Variables para filtrar" data-title="Variables para filtrar">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen02.jpg" alt="Variables para filtrar" />
+                </a>
+            </div>
+        </div>
+        <div class="alert alert-info row" role="alert">
+            <div class="col-md-1">
+                <i class="fa fa-5x fa-info"></i>
+            </div>
+            <div class="col-md-10">
+                <strong>Importante!</strong><br />
+                Para poder “Filtrar” por Grupo, el usuario debe estar autorizado para ver los datos del grupo seleccionado. El usuario puede tener
+                autorización para ver varios Grupos y aparecerán en su lista de Grupos una vez haya iniciado sesión con su usuario y contraseña.
+            </div>
+        </div>
+    </div>
+        <div class="col-md-12">
+            <h3 id="Gráficas">Gráficas</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Debajo del mapa, se muestran 2 gráficas tipo “Torta”, la primera conteniendo la información de los animales según el “Filtro” aplicado y
+                        agrupados según la opción de agrupamiento seleccionada.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen03.jpg" class="thumbnail" data-lightbox="Gráficas" data-title="Variables para filtrar">
+                        <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen03.jpg" alt="Gráficas" />
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Las opciones de agrupamiento para los animales son:
+                        <ul>
+                            <li>Por Especie.</li>
+                            <li>Por Ubicación.</li>
+                            <li>Por Tipo de explotación.</li>
+                            <li>Por Tipo de manejo.</li>
+                            <li>Por Zona Agroecológica.</li>
+                            <li>Por Estados.</li>
+                            <li>Por Estatus.</li>
+                            <li>Por Estatus productivo.</li>
+                            <li>Por Estatus reproductivo.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen04.jpg" class="thumbnail" data-lightbox="Agrupamiento para animales" data-title="Agrupamiento para animales">
+                        <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen04.png" alt="Agrupamiento para animales" />
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        La segunda, contiene información de los rebaños según el filtro aplicado y mostrándose agrupados por:
+                        <ul>
+                            <li>Por Especie.</li>
+                            <li>Por Ubicación.</li>
+                            <li>Por Tipo de explotación.</li>
+                            <li>Por Tipo de manejo.</li>
+                            <li>Por Zona Agroecológica.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen05.jpg" class="thumbnail" data-lightbox="Agrupamiento para rebaños" data-title="Agrupamiento para rebaños">
+                        <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen05.png" alt="Agrupamiento para rebaños" />
+                    </a>
+                </div>
+            </div>
+        </div>
+</article>

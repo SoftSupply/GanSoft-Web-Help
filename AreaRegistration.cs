@@ -1,14 +1,14 @@
 ﻿using System.Web.Mvc;
 
-namespace SoftSupply.Help.Areas.Reseller
+namespace SoftSupply.Help.Areas.GanSoftWeb
 {
-    public class ResellerAreaRegistration : AreaRegistration
+    public class GanSoftWebAreaRegistration : AreaRegistration
     {
         public override string AreaName
         {
             get
             {
-                return "Reseller";
+                return "GanSoftWeb";
             }
         }
 

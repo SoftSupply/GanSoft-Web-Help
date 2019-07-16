@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Estadísticas";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de GanSoft Web {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Evalúa el comportamiento estadístico de las cada una de
+            las especies seleccionadas.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Filtrar">Filtrar</a>
+            </li>
+            <li>
+                <a href="#Gráficas">Gráficas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Filtrar">Filtrar</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Esta opción también permite aplicar los mismos filtros que la opción anterior para obtener los resultados deseados.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen06.jpg" class="thumbnail" data-lightbox="Filtros para Estadísticas" data-title="Filtros para Estadísticas">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen06.png" alt="Filtros para Estadísticas" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Además, se evalúan 3 grupos de variables que se encuentran en la lista
+                    identificada como “Variables agrupadas por”:
+                    <ul>
+                        <li>Crecimiento.</li>
+                        <li>Producción.</li>
+                        <li>Reproducción.</li>
+
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen07.jpg" class="thumbnail" data-lightbox="Agrupamiento de variables" data-title="Agrupamiento de variables">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen07.png" alt="Agrupamiento de variables" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Dentro del grupo de variables de “Crecimiento” se encuentran:
+                    <ul>
+                        <li>Edad de entrada a servicio (meses).</li>
+                        <li>Ganancia diaria nacimiento-entrada a servicio (gr/día).</li>
+                        <li>Peso ajustado a 18 meses del animal.</li>
+                        <li>Peso ajustado a 205 días del animal.</li>
+                        <li>Peso ajustado a 24 meses del animal.</li>
+                        <li>Peso ajustado a 365 días del animal.</li>
+                        <li>Peso de destete del animal.</li>
+                        <li>Peso de nacimiento del animal.</li>
+                        <li>Peso de entrada a servicio.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen08.jpg" class="thumbnail" data-lightbox="Agrupamiento de variables para Crecimiento" data-title="Agrupamiento de variables para Crecimiento">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen08.png" alt="Agrupamiento de variables para Crecimiento" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    El grupo de variables de “Reproducción” está compuesto por:
+                    <ul>
+                        <li>Edad al primer parto (meses).</li>
+                        <li>Edad al primer servicio (meses).</li>
+                        <li>Promedio días entre celos.</li>
+                        <li>Promedio días entre revisiones.</li>
+                        <li>Promedio días gestación.</li>
+                        <li>Promedio inseminaciones por concepción.</li>
+                        <li>Promedio montas por concepción.</li>
+                        <li>Promedio parto primer celo (días).</li>
+                        <li>Promedio parto primer servicio (días).</li>
+                        <li>Promedio Parto-concepción (días).</li>
+                        <li>Promedio Parto-Parto (días).</li>
+                        <li>Promedio primer servicio-concepción (días).</li>
+                        <li>Promedio revisiones por parto.</li>
+                        <li>Promedio servicios por concepción.</li>
+                        <li>Promedio trasplantes por concepción.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen09.jpg" class="thumbnail" data-lightbox="Agrupamiento de variables para Reproducción" data-title="Agrupamiento de variables para Reproducción">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen09.png" alt="Agrupamiento de variables para Reproducción" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Las variables del grupo de “Producción” son:
+                    <ul>
+                        <li>Edad a la primera lactancia (meses).</li>
+                        <li>Promedio días en producción (histórico).</li>
+                        <li>Promedio días seca (histórico).</li>
+                        <li>Promedio ganancia entre partos (histórico).</li>
+                        <li>Promedio pesos destetados por lactancia.</li>
+                        <li>Promedio producción 244 días (histórico).</li>
+                        <li>Promedio producción 270 días (histórico).</li>
+                        <li>Promedio producción 305 días (histórico).</li>
+                        <li>Promedio ganancia entre lactancias (histórico).</li>
+                        <li>Promedio ganancia entre partos (histórico).</li>
+                        <li>Promedio producción entre partos (histórico).</li>
+                        <li>Promedio producción total (histórico).</li>
+                        <li>Promedio total destetados por lactancia.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen10.jpg" class="thumbnail" data-lightbox="Agrupamiento de variables para Producción" data-title="Agrupamiento de variables para Producción">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen10.png" alt="Agrupamiento de variables para Producción" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h3 id="Gráficas">Gráficas</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Una vez seleccionados los filtros, el grupo y la variable deseada, se presiona “Calcular”, y luego de unos instantes aparecerá un cuadro
+                        mostrando los siguientes datos:
+                    </p>
+                </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen11.jpg" class="thumbnail" data-lightbox="Cuadro de Distribución Normal" data-title="Cuadro de Distribución Normal">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen11.png" alt="Cuadro de Distribución Normal" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    La información contenida en este cuadro es:
+                    <ul>
+                        <li>Descripción de la variable.</li>
+                        <li>Número de rebaños analizados.</li>
+                        <li>Número de animales analizados.</li>
+                        <li>Valor promedio de la variable.</li>
+                        <li>Valor de la desviación estándar.</li>
+                        <li>Valor mínimo de la muestra.</li>
+                        <li>Valor máximo de la muestra.</li>
+                    </ul>
+                </p>
+                <p>
+                    Al seleccionar la variable que se desea analizar y aparezca el cuadro con la información mencionada, podemos notar que los valores “Mínimo” y
+                    “Máximo” pudieran mostrar valores muy altos o muy por debajo de los valores lógicos. Esos valores son errores que existen en los datos de
+                    algún animal de algún usuario y queremos mostrar y evaluar la totalidad de los registros, sin embargo, si deseamos excluir esos valores y obtener
+                    valores más precisos en el análisis, podemos establecer y acotar esos valores colocando unos valores “Mínimo” y “Máximo” que excluyan del
+                    cálculo esos posibles errores.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Debajo del cuadro aparece una gráfica con la “Distribución Normal” ó  “Campana de Gauss”, mostrando la cantidad de muestras evaluadas
+                    dentro de cada rango.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen12.jpg" class="thumbnail" data-lightbox="Gráfica de Distribución Normal" data-title="Gráfica de Distribución Normal">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen12.png" alt="Gráfica de Distribución Normal" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Finalmente, se muestra un cuadro con la distribución de elementos, animales y rebaños en 6 secciones calculadas de la siguiente manera:
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/GanSoftWeb/Content/img/captures/imagen13.jpg" class="thumbnail" data-lightbox="Cuadro de distribución de elementos" data-title="Cuadro de distribución de elementos">
+                    <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/captures/imagen13.png" alt="Cuadro de distribución de elementos" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Los valores de la gráfica que se muestran dependen de la selección que
+                    se haya escogido en la tabla inferior:
+                    <ul>
+                        <li>Elementos.</li>
+                        <li>Animales.</li>
+                        <li>Rebaños</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Las secciones se distribuyen de acuerdo a los siguientes criterios:
+                    <ul>
+                        <li><b>Sección 1:</b> < P – 2 x DS.</li>
+                        <li><b>Sección 2:</b> < P – DS y >= P – 2 x DS.</li>
+                        <li><b>Sección 3:</b> < P  y  >= P – DS.</li>
+                        <li><b>Sección 4:</b> < P + DS  y  >= P.</li>
+                        <li><b>Sección 5:</b> < P + 2 x DS  y  >= P + DS.</li>
+                        <li><b>Sección 6:</b> >= P + 2 x DS.</li>
+                    </ul>
+                    Donde <b>P</b> es el valor promedio de la variable y <b>DS</b> es la desviación estándar.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

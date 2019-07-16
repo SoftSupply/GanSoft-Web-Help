@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
-    ViewBag.Title = "Bienvenido";
+    ViewBag.Title = "GanSoft Web";
     ViewBag.SubTitle = "";
-    ViewBag.MainTitle = $"Manual Distribuidores {ViewBag.Manifest.Title}";
+    ViewBag.MainTitle = $"Manual de GanSoft Web {ViewBag.Manifest.Title}";
 }
 
 <div class="row">
@@ -11,16 +11,17 @@
     </div>
     <div class="col-md-12">
         <p class="lead">
-            Si te encuentras en esta sección es porque deseas formar parte de la familia TDPro ¡eso nos complace muchísimo!
+            Guía que descibe detalladamente todas las funciones de la plataforma online GanSoft Web para una mejor experiencia del usuario
         </p>
     </div>
     <div class="col-md-2 text-center">
-        <img class="img-responsive" src="~/Areas/Reseller/Content/img/logo.png" alt="Logo" />
+        <img class="img-responsive" src="~/Areas/GanSoftWeb/Content/img/logo.png" alt="Logo" />
     </div>
     @*TODO - diseñar imagen TDPro/softsupply*@
     <div class="col-md-10">
         <p>
-            Aquí encontraras una guía que te orientará durante todo el camino a trabajar juntos, comenzaremos con la creación de la cuenta, luego una descripción de todo lo que podrás realizar desde nuestra plataforma y asesoramiento de cómo proceder durante tus negocios con nuestros productos aprovechando todas nuestras herramientas.
+            GanSoft Web es una plataforma de estadísticas de comportamiento de rebaños en internet pública y gratuita.
+                 La información contenida y mostrada en dicha plataforma es anónima, constituida con información de todos los usuarios de GanSoft Pro que tienen conexión a internet y la versión de GanSoft igual o superior a 7.1.0.  
         </p>
     </div>
 </div>
