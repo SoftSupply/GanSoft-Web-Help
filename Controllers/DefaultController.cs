@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace SoftSupply.Help.Areas.GanSoftWeb.Content
 {
     public class DefaultController : Controller
     {
-        // GET: Generic/Default
+        // GET: GanSoftWeb/Default
         public ActionResult Index(string id = "", string key = "")
         {
             if (string.IsNullOrEmpty(id))
