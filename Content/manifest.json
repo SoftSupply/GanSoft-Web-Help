@@ -7,7 +7,7 @@
       "Title": "<b>General</b>",
       "Items": [
         {
-          "Title": "General",
+          "Title": "Principal",
           "Link": "GanSoftWeb?id=General&key=General"
         }
       ]
@@ -16,7 +16,7 @@
       "Title": "<b>Estadísticas</b>",
       "Items": [
         {
-          "Title": "Estadísticas",
+          "Title": "Principal",
           "Link": "GanSoftWeb?id=Estadisticas&key=Estadisticas"
         }
       ]
@@ -25,7 +25,7 @@
       "Title": "<b>Históricos</b>",
       "Items": [
         {
-          "Title": "Históricos",
+          "Title": "Principal",
           "Link": "GanSoftWeb?id=Historicos&key=Historicos"
         }
       ]
